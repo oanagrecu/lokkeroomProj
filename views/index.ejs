@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Displaying Data from MariaDB</title>
+  </head>
+  <body>
+    <h1>User Data</h1>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>User Name</th>
+        <th>Email</th>
+      </tr>
+      <% data.forEach((user) => { %>
+      <tr>
+        <td><%= user.firstName %></td>
+        <td><%= user.lastName %></td>
+        <td><%= user.userName %></td>
+        <td><%= user.email %></td>
+      </tr>
+      <% }); %>
+    </table>
+    <script src="/static/scripts/index.js"></script>
+  </body>
+</html>

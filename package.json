@@ -1,22 +1,25 @@
 {
+  "type": "module",
   "name": "lokkeroomproj",
   "version": "1.0.0",
   "description": "",
-  "main": "server.mjs",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.mjs"
+    "dev": "nodemon server.js"
   },
   "author": "Grecu Oana",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
-    "ejs": "^3.1.9",
+    "ejs-mate": "^4.0.0",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.1",
+    "mysql2": "^3.6.0",
     "nodemon": "^3.0.1",
-    "pg": "^8.11.1",
     "util": "^0.12.5"
   }
 }
